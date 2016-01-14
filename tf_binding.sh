@@ -22,3 +22,9 @@ bedtools intersect -a gencode.v19.annotation.chr22.transcript.promoter.gtf -b tf
 #Exercise 5: Use bedtools getfasta to extract sequences
 bedtools getfasta -fi GRCh37.p13.chr22.fa -bed gencode.v19.annotation.chr22.transcript.promoter.nfkb.gtf -s  -fo gencode.v19.annotation.chr22.transcript.promoter.nfkb.fasta
 #EXERCISE6
+
+
+echo "Hello I am a message in standard out (stdout)" 
+
+
+
