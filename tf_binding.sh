@@ -1,11 +1,11 @@
 #PBS TAGS
-#!/bin/csh
+#!/bin/bash
 #PBS -q hotel
 #PBS -N tf_binding.sh
 #PBS -l nodes=10:ppn=2
 #PBS -l walltime=0:50:00
-#PBS -o output.sh
-#PBS -e error.txt
+#PBS -o tf_binding.sh.o
+#PBS -e ef_binding.sh.e
 #PBS -V
 #PBS -M e1luo@ucsd.edu
 #PBS -m abe
