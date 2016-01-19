@@ -1,5 +1,4 @@
-#PBS TAGS
-#!/bin/csh
+#!/bin/bash
 #PBS -q hotel
 #PBS -N tf_binding.sh
 #PBS -l nodes=10:ppn=2
