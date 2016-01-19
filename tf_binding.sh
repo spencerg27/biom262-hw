@@ -1,5 +1,4 @@
-#PBS TAGS
-#!/bin/csh
+#!/bin/bash
 #PBS -q hotel
 #PBS -N tf_binding.sh
 #PBS -l nodes=10:ppn=2
@@ -10,8 +9,10 @@
 #PBS -M e1luo@ucsd.edu
 #PBS -m abe
 #PBS -A e1luo
-cd /oasis/tscc/scratch/e1luo
-mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
+#cd /oasis/tscc/scratch/e1luo
+#mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
+
+cd /home/ecwheele/biom262/code/biom262-2016/weeks/week01/data
 
 awk -F "\t" '{if($3 == "transcript") {print $0}}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf 
 #EXERCISE3 (include loading of biotools)
