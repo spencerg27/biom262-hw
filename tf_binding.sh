@@ -10,7 +10,7 @@
 #PBS -m abe
 #PBS -A e1luo
 cd ~/code/biom262-2016/weeks/week01/data
-mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
+
 
 awk -F "\t" '{if($3 == "transcript") {print $0}}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf 
 #EXERCISE3 (include loading of biotools)
