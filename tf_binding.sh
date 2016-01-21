@@ -1,4 +1,6 @@
-#PBS TAGS
+<<<<<<>
+=======
+>>>>>>> 3e502aff30369be1679b37062b34b470709c3a5c
 #!/bin/bash
 #PBS -q hotel
 ##PBS -N tf_binding.sh
@@ -7,11 +9,15 @@
 #PBS -o tf_binding.sh.o
 #PBS -e ef_binding.sh.e
 #PBS -V
-##PBS -M e1luo@ucsd.edu
-##PBS -m abe
-##PBS -A e1luo
-cd /oasis/tscc/scratch/e1luo
+<<<<<<< HEAD
+=======
+#PBS -M e1luo@ucsd.edu
+#PBS -m abe
+#PBS -A e1luo
+#cd /oasis/tscc/scratch/e1luo
 #mpirun -v -machinefile $PBS_NODEFILE -np 20 <./mpi.out>
+cd /home/ecwheele/biom262/code/biom262-2016/weeks/week01/data
+>>>>>>> 3e502aff30369be1679b37062b34b470709c3a5c
 
 awk -F "\t" '{if($3 == "transcript") {print $0}}' gencode.v19.annotation.chr22.gtf > gencode.v19.annotation.chr22.transcript.gtf 
 #EXERCISE3 (include loading of biotools)
